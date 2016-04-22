@@ -45,7 +45,7 @@ app.put('/lions/:id', function(req, res) {
   }
 });
 
-app.set('port', (process.env.PORT || 8080));
+app.set('port', (process.env.PORT || 3000)); // Changing port to 3000 to run locally.
 
 app.listen(app.get('port'), function() {
  console.log("Node app is running at localhost:" + app.get('port'))
